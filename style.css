@@ -64,7 +64,7 @@ nav {
 .navLeft::after {
   content: "";
   position: absolute;
-  top: 33px;
+  top: 28px;
   left: 0;
   width: 0;
   height: 1px;
@@ -430,6 +430,7 @@ section {
   width: 20vw;
   height: 5vh;
   border-radius: 3vh;
+  padding-top: 3px;
   margin: 5% 6%;
   background-color: rgb(255, 128, 0);
   color: white;
@@ -610,17 +611,13 @@ section {
 .infoLink {
   color: rgb(0, 100, 73);
 }
-.phone {
+.phone, .linkedIn {
   width: 25px;
   height: 25px;
 }
 .mail {
   width: 25px;
   height: 21px;
-}
-.linkedIn {
-  width: 25px;
-  height: 25px;
 }
 
 
