@@ -1,19 +1,19 @@
 {
     "short_name": "Hang Vo Interior",
-    "name": "PORTFOLIO",
+    "name": "Hang Vo",
     "icons": [
       {
-        "src": "./icons/favicon/favicon.ico",
+        "src": "./favicon/favicon.ico",
         "sizes": "64x64 24x24",
         "type": "icons/x-icon"
       },
       {
-        "src": "./icons/favicon/android-chrome-192x192.png",
+        "src": "./favicon/android-chrome-192x192.png",
         "type": "icons/png",
         "sizes": "192x192"
       },
       {
-        "src": "./icons/favicon/android-chrome-512x512.png",
+        "src": "./favicon/android-chrome-512x512.png",
         "type": "icons/png",
         "sizes": "512x512"
       }

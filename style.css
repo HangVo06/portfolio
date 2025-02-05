@@ -53,6 +53,7 @@ nav {
   align-items: center;
 }
 .navLeft {
+  position: relative;
   height: fit-content;
   text-decoration: none;
   display: flex;
@@ -62,10 +63,11 @@ nav {
 }
 .navLeft::after {
   content: "";
+  position: absolute;
+  top: 33px;
+  left: 0;
   width: 0;
   height: 1px;
-  position: absolute;
-  top: 63px;
   background: wheat;
   transition: width 0.3s ease-out;
 }
@@ -85,6 +87,7 @@ nav {
   gap: 15px;
 }
 .navEach {
+  position: relative;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 18px;
   color: white;
@@ -98,39 +101,42 @@ nav {
 }
 #navRight1::before {
   content: "";
+  position: absolute;
+  top: 20px;
+  left: 2px;
   width: 0;
   height: 1px;
-  position: absolute;
-  top: 60px;
   background: white;
   transition: width 0.4s ease-out;
 }
 #navRight1.is-on::before {
-  width: 50px;
+  width: 55px;
 }
 #navRight2::before {
   content: "";
+  position: absolute;
+  top: 20px;
+  left: 2px;
   width: 0;
   height: 1px;
-  position: absolute;
-  top: 60px;
   background: white;
   transition: width 0.4s ease-out;
 }
 #navRight2.is-on::before {
-  width: 63px;
+  width: 69px;
 }
 #navRight3::before {
   content: "";
+  position: absolute;
+  top: 20px;
+  left: 2px;
   width: 0;
   height: 1px;
-  position: absolute;
-  top: 60px;
   background: white;
   transition: width 0.4s ease-out;
 }
 #navRight3.is-on::before {
-  width: 63px;
+  width: 70px;
 }
 
 .navBurger {
@@ -165,7 +171,7 @@ nav {
   translate: 0 -9px;
 }
 .nav_burger_list {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
@@ -201,10 +207,13 @@ section {
 
 
 #section1 {
+  position: relative;
   height: 80vh;
 }
 .bannerImg {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -224,6 +233,8 @@ section {
 }
 .bannerCover {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: black;
@@ -232,6 +243,8 @@ section {
 .bannerTitle {
   position: absolute;
   top: 45%;
+  left: 50%;
+  translate: -50% 0;
   color: white;
   font-size: 45px;
   opacity: 0;
@@ -290,6 +303,7 @@ section {
   margin: 5vh 0 0 5vw;
 }
 .section2_face_phone {
+  position: relative;
   width: 100%;
   height: 50vh;
   margin: 5vh 0;
@@ -300,10 +314,12 @@ section {
 }
 .section2_face_phone::before {
   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 90vw;
   height: 50vh;
   border-radius: 39% 61% 66% 34% / 68% 57% 43% 32%;
-  position: absolute;
   background: var(--coffee);
   z-index: -1;
 }
@@ -324,6 +340,7 @@ section {
   width: fit-content;
 }
 .section2Right {
+  position: relative;
   width: 30vw;
   margin: 5vh 0;
   border-radius: 55% 45% 57% 43% / 67% 49% 51% 33%;
@@ -333,10 +350,12 @@ section {
 }
 .section2Right::before {
   content: "";
-  width: 30%;
-  height: 75%;
-  border-radius: 39% 61% 66% 34% / 68% 57% 43% 32%;
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 39% 61% 66% 34% / 68% 57% 43% 32%;
   background: var(--coffee);
   z-index: -1;
 }
@@ -373,6 +392,7 @@ section {
   transition: all 0.5s ease-in-out;
 }
 .project {
+  position: relative;
   width: 90vw;
   height: 85vw;
   margin: 0 10px;
@@ -426,6 +446,8 @@ section {
 }
 .projectCover {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 90vw;
   height: 85vw;
   border-radius: 5px;
@@ -591,23 +613,14 @@ section {
 .phone {
   width: 25px;
   height: 25px;
-  background: url("./icons/icon-call-squared-96.png") no-repeat;
-  background-size: cover;
-  filter: invert(14%) sepia(97%) saturate(3061%) hue-rotate(357deg) brightness(92%) contrast(92%);
 }
 .mail {
   width: 25px;
-  height: 25px;
-  background: url("./icons/icon-mail-account-96.png") no-repeat;
-  background-size: cover;
-  filter: invert(14%) sepia(97%) saturate(3061%) hue-rotate(357deg) brightness(92%) contrast(92%);
+  height: 21px;
 }
 .linkedIn {
   width: 25px;
   height: 25px;
-  background: url("./icons/icon-linkedin-50.png") no-repeat;
-  background-size: cover;
-  filter: invert(14%) sepia(97%) saturate(3061%) hue-rotate(357deg) brightness(92%) contrast(92%);
 }
 
 
