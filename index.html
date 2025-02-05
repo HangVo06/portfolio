@@ -203,16 +203,8 @@
               <a class="infoLink" href="mailto:thuyhang.v93@gmail.com">thuyhang.v93@gmail.com</a>
             </div>
             <div class="info">
-              <a
-                class="linkedIn"
-                href="https://www.linkedin.com/in/hangvo0693/"
-                target="_blank"
-              ></a>
-              <a
-                class="infoLink"
-                href="https://www.linkedin.com/in/hangvo0693/"
-                target="_blank"
-              >linkedin.com/in/hangvo0693/</a>
+              <a class="linkedIn" href="https://www.linkedin.com/in/hangvo0693/" target="_blank"></a>
+              <a class="infoLink" href="https://www.linkedin.com/in/hangvo0693/" target="_blank">linkedin.com/in/hangvo0693/</a>
             </div>
           </div>
         </div>
@@ -220,7 +212,12 @@
     </main>
     <footer>
         <div class="footer_main">
-          Copyright &copy; 2024 All Rights Reserved by Vo Thi Thuy Hang
+          Copyright &copy;
+          <span id="copyright_year">
+            <script>document.getElementById('copyright_year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+          </span>
+          All Rights Reserved by
+          <a class="footLink" href="https://www.linkedin.com/in/hangvo0693/" target="_blank">Vo Thi Thuy Hang</a>
           <br>
           Created by <a class="footLink" href="https://hovinhthanh7893.github.io/portfolio/" target="_blank">hovinhthanh7893</a>
         </div>
