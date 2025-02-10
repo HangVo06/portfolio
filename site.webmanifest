@@ -1,12 +1,7 @@
 {
   "name": "HangVo",
-  "short_name": "Hang Vo",
+  "short_name": "HangVo",
   "icons": [
-    {
-      "src": "./favicon/favicon.ico",
-      "sizes": "64x64 24x24",
-      "type": "icons/x-icon"
-    },
     {
       "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
@@ -20,8 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
   "theme_color": "#ffffff",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "display": "standalone"
 }

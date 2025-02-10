@@ -492,6 +492,9 @@ section {
   border-radius: 50%;
   border: white solid 1px;
   background: var(--coffee);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 10;
 }
 .prevBut {
@@ -502,17 +505,18 @@ section {
 }
 .pre, .nex {
   width: 2vh;
+  min-width: 2vh;
   height: 2vh;
   border: white solid;
   rotate: 45deg;
 }
 .pre {
   border-width: 0 0 1px 1px;
-  translate: 1.6vw 0;
+  translate: 25% 0;
 }
 .nex {
   border-width: 1px 1px 0 0;
-  translate: 0.2vw 0;
+  translate: -25% 0;
 }
 .prevBut:active, .nextBut:active {
   border: rgb(255, 162, 0) solid 2px;
@@ -549,18 +553,22 @@ section {
   background-size: cover;
 }
 .project:nth-of-type(6) {
-  background: url("./images/new-alys/na-2.webp") no-repeat 50% 50%;
+  background: url("./images/vt/vt-2.webp") no-repeat 50% 50%;
   background-size: cover;
 }
 .project:nth-of-type(7) {
-  background: url("./images/az-home/az-1.webp") no-repeat 50% 50%;
+  background: url("./images/new-alys/na-2.webp") no-repeat 50% 50%;
   background-size: cover;
 }
 .project:nth-of-type(8) {
-  background: url("./images/vungtau/vungtau-9.webp") no-repeat 50% 50%;
+  background: url("./images/az-home/az-1.webp") no-repeat 50% 50%;
   background-size: cover;
 }
 .project:nth-of-type(9) {
+  background: url("./images/vungtau/vungtau-9.webp") no-repeat 50% 50%;
+  background-size: cover;
+}
+.project:nth-of-type(10) {
   background: url("./images/dongthap/dongthap-5.webp") no-repeat 50% 50%;
   background-size: cover;
 }
@@ -726,10 +734,18 @@ footer {
 .projectDetail {
   width: 90%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   color: white;
   text-align: center;
   margin-bottom: 10px;
+}
+.projectDetail ul {
+  margin: 0;
+}
+.projectDetail li {
+  text-align: left;
 }
 .projectImg {
   width: 100%;
@@ -904,12 +920,6 @@ footer {
     display: block;
   }
 
-  .pre {
-    translate: 1.2vh 0;
-  }
-  .nex {
-    translate: 0.4vh 0;
-  }
   .prevBut:hover, .nextBut:hover {
     border: rgb(255, 162, 0) solid 2px;
     cursor: pointer;

@@ -199,6 +199,10 @@ document.querySelector("#navBurgerSec4").addEventListener("click", function(even
 //PROJECT SLIDE
 const totalProject = document.querySelectorAll(".project").length;
 let slidePos = 0;
+if (totalProject % 2 === 0) {
+  slidePos = slidePos + ((document.querySelector(".wrapper").getBoundingClientRect().width / totalProject) / 2);
+  document.querySelector(".wrapper").style.translate = slidePos + "px";
+}
 let currentProject = Math.ceil(totalProject / 2);
 document.querySelectorAll(".project")[currentProject-1].classList.add("is-in");
 document.querySelectorAll(".dot")[currentProject-1].classList.add("is-at");
@@ -247,6 +251,10 @@ function onWindowResize() {
   document.querySelectorAll(".project")[currentProject-1].classList.remove("is-in");
   document.querySelectorAll(".dot")[currentProject-1].classList.remove("is-at");
   slidePos = 0;
+  if (totalProject % 2 === 0) {
+    slidePos = slidePos + ((document.querySelector(".wrapper").getBoundingClientRect().width / totalProject) / 2);
+    document.querySelector(".wrapper").style.translate = slidePos + "px";
+  }
   currentProject = Math.ceil(totalProject / 2);
   document.querySelector(".wrapper").style.translate = slidePos + "px";
   document.querySelectorAll(".project")[currentProject-1].classList.add("is-in");
@@ -451,6 +459,28 @@ document.querySelector("#close9").addEventListener("click", function(event) {
   document.querySelector("#detail9").style.opacity = 0;
   setTimeout(() => {
     document.querySelector("#detail9").style.display = "none";
+  }, '400')
+  document.body.style.overflowY = "scroll";
+  onMain = true
+});
+//Project 10
+document.querySelector("#view10").addEventListener("click", function(event) {
+  document.querySelector("#detail10").style.display = "flex";
+  setTimeout(() => {
+    document.querySelector("#detail10").style.opacity = 1;
+    document.querySelector("#container10").style.opacity = 1;
+    document.querySelector("#container10").style.scale = 1;
+  }, '5')
+  document.body.style.overflowY = "hidden";
+  document.querySelector("nav").style.transform = 'translateY(-100px)';
+  onMain = false;
+});
+document.querySelector("#close10").addEventListener("click", function(event) {
+  document.querySelector("#container10").style.opacity = 0;
+  document.querySelector("#container10").style.scale = 0.8;
+  document.querySelector("#detail10").style.opacity = 0;
+  setTimeout(() => {
+    document.querySelector("#detail10").style.display = "none";
   }, '400')
   document.body.style.overflowY = "scroll";
   onMain = true
