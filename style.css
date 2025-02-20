@@ -545,30 +545,34 @@ section {
   background-size: cover;
 }
 .project:nth-of-type(4) {
-  background: url("./images/nha-4/nha4-1.webp") no-repeat 50% 50%;
+  background: url("./images/bifa/bifa-7.webp") no-repeat 50% 50%;
   background-size: cover;
 }
 .project:nth-of-type(5) {
-  background: url("./images/nha-1/nha1-1.webp") no-repeat 50% 50%;
+  background: url("./images/nha-4/nha4-1.webp") no-repeat 50% 50%;
   background-size: cover;
 }
 .project:nth-of-type(6) {
-  background: url("./images/vt/vt-2.webp") no-repeat 50% 50%;
+  background: url("./images/nha-1/nha1-1.webp") no-repeat 50% 50%;
   background-size: cover;
 }
 .project:nth-of-type(7) {
-  background: url("./images/new-alys/na-2.webp") no-repeat 50% 50%;
+  background: url("./images/vt/vt-2.webp") no-repeat 50% 50%;
   background-size: cover;
 }
 .project:nth-of-type(8) {
-  background: url("./images/az-home/az-1.webp") no-repeat 50% 50%;
+  background: url("./images/new-alys/na-2.webp") no-repeat 50% 50%;
   background-size: cover;
 }
 .project:nth-of-type(9) {
-  background: url("./images/vungtau/vungtau-9.webp") no-repeat 50% 50%;
+  background: url("./images/az-home/az-1.webp") no-repeat 50% 50%;
   background-size: cover;
 }
 .project:nth-of-type(10) {
+  background: url("./images/vungtau/vungtau-9.webp") no-repeat 50% 50%;
+  background-size: cover;
+}
+.project:nth-of-type(11) {
   background: url("./images/dongthap/dongthap-5.webp") no-repeat 50% 50%;
   background-size: cover;
 }
