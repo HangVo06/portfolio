@@ -485,3 +485,25 @@ document.querySelector("#close10").addEventListener("click", function(event) {
   document.body.style.overflowY = "scroll";
   onMain = true
 });
+//Project 11
+document.querySelector("#view11").addEventListener("click", function(event) {
+  document.querySelector("#detail11").style.display = "flex";
+  setTimeout(() => {
+    document.querySelector("#detail11").style.opacity = 1;
+    document.querySelector("#container11").style.opacity = 1;
+    document.querySelector("#container11").style.scale = 1;
+  }, '5')
+  document.body.style.overflowY = "hidden";
+  document.querySelector("nav").style.transform = 'translateY(-100px)';
+  onMain = false;
+});
+document.querySelector("#close11").addEventListener("click", function(event) {
+  document.querySelector("#container11").style.opacity = 0;
+  document.querySelector("#container11").style.scale = 0.8;
+  document.querySelector("#detail11").style.opacity = 0;
+  setTimeout(() => {
+    document.querySelector("#detail11").style.display = "none";
+  }, '400')
+  document.body.style.overflowY = "scroll";
+  onMain = true
+});
